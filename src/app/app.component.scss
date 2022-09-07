@@ -1,0 +1,45 @@
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: -12px !important;
+}
+
+li {
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 0;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    mat-icon {
+        margin-right: 16px;
+    }
+}
+
+.mat-drawer-container {
+    height: 100vh;
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.sidenav {
+    width: 300px;
+}
+
+.logo-container {
+    border-bottom: 1px solid lightgrey;
+    padding: 21.65px;
+}
+
+.router-container {
+    padding-left: 56px;
+    padding-top: 16px;
+}
