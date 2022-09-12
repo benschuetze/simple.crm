@@ -1,0 +1,39 @@
+mat-menu {
+    padding-top: -24px !important;
+}
+
+.user-detail-header {
+    min-height: 250px;
+    display: flex;
+    align-items: flex-end;
+
+    img {
+        height: 80px;
+        object-fit: cover;
+    }
+
+    .user-details {
+        h2 {
+            margin-bottom: -16px;;
+        }
+
+        height: 80px;
+        margin-left: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+
+}
+
+.pin-right-upper-corner {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.edit-button {
+    padding-top: -24px;
+}

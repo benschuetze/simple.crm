@@ -31,15 +31,23 @@ li {
 }
 
 .sidenav {
-    width: 300px;
+    width: 200px;
 }
 
 .logo-container {
     border-bottom: 1px solid lightgrey;
     padding: 21.65px;
+    display: flex;
+    align-items: center;
 }
 
 .router-container {
     padding-left: 56px;
+    padding-right: 56px;
     padding-top: 16px;
+}
+
+.logo-img {
+    height: 32px;
+    margin-right: 16px;
 }

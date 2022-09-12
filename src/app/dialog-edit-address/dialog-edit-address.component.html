@@ -1,0 +1,28 @@
+<div class="wrapper">
+    <mat-progress-bar *ngIf="loading" class="progress-bar" mode="indeterminate"></mat-progress-bar>
+    <h1 mat-dialog-title>Add User</h1>
+    <div mat-dialog-content>
+
+
+        <div>
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Street, House No.</mat-label>
+                <input [disabled]="loading" [(ngModel)]="user.street" matInput placeholder="Street, House No.">
+            </mat-form-field>
+
+            <mat-form-field class="mr-q6" appearance="outline">
+                <mat-label>Zip Code</mat-label>
+                <input [disabled]="loading" [(ngModel)]="user.zipCode" matInput placeholder="Zip Code">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>City</mat-label>
+                <input [disabled]="loading" [(ngModel)]="user.city" matInput placeholder="City">
+            </mat-form-field>
+        </div>
+    </div>
+    <div mat-dialog-actions>
+        <button (click)="onNoClick()" [disabled]="loading" mat-button>Cancel</button>
+        <button [disabled]="loading" (click)="saveUser()" mat-button cdkFocusInitial>Save</button>
+    </div>
+</div>
